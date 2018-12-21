@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Typing Effect</title>
+    <link href="typingeffect.jquery.css" rel="stylesheet">
+</head>
+<body>
+<style>
+    .container{
+        margin:100px auto;
+        text-align: center;
+    }
+    .container textarea {
+        width: 300px;
+        padding: 4px;
+    }
+</style>
+<div class="container">
+    <textarea class="typingeffect" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="typingeffect.js"></script>
+<script>
+    $(function(){
+        $(".typingeffect").typingEffect();
+    });
+</script>
+</body>
+</html>
